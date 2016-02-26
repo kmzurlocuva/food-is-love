@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>foodislove</title>
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <!-- <link rel="stylesheet" href="css/icons.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/module.css">
+
+    <script id="article-template" type="text/x-handlebars-template">
+      <section id="articles">
+        <h3>{{title}}</h3>
+        <div class="date">{{publishedOn}}</div>
+        <p><a href="#" class="read-on">Read on &rarr;</a></p><article class="teaser">{{{teaser}}}</article>
+        <div class="body">{{{body}}}></div>
+      </section>
+      <section class="sideNav">
+        <h3 id="sideNavTitle">{{title}}</h3>
+        <h3 id="sideNavCategory">{{category}}</h3>
+      </section>
+    </script>
+
+  </head>
+  <body>
+    <main>
+
+      <section class="mainStacks">
+        <h1 id="blogTitle">Food Is Love --</h1>
+        <h2 id="tagline">Taking Food Less Seriously, One Meal at a Time</h2>
+
+        <article class="contentPlaceholder"></article>
+      </section>
+    </main>
+    <footer>
+      <article id="about">
+        <h3>Hi, my name is Kate and I unnecessarily make lists out of everything:
+          <ul>
+            <li>I love to cook and do it every day pretty much regardless of what's in the fridge or whether there's a plan</li>
+            <li>I have a husband and a kid who I describe as "handsome, good eaters"</li>
+            <li>I own a (consistently cracked) camera with a phone</li>
+            <li>I recently fell in love with Web programming</li>
+          </ul>
+            This Web site pulls together basically all of the things I am currently in to. I hope you enjoy and encourage you to be in touch with recipes, comments, and/or heaping amounts of praise.
+        </h3>
+      </article>
+    </footer>
+
+    <script src="/vendor/jquery-2.2.0.js"></script>
+    <script src="/vendor/handlebars.js"></script>
+    <script src="js/blogArticles.json"></script>
+    <script src="js/articles.js"></script>
+    <script src="js/articleView.js"></script>
+  </body>
+</html>
